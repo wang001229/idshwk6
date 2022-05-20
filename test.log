@@ -1,0 +1,812 @@
+------------------------------------Date------------------------------------
+2022年 05月 21日 星期六 00:01:58 CST
+
+------------------------------------OS version------------------------------------
+Debian GNU/Linux 11 \n \l
+
+------------------------------------Hardware Information------------------------------------
+Linux debian 5.10.0-12-amd64 #1 SMP Debian 5.10.103-1 (2022-03-07) x86_64 GNU/Linux
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+cpu MHz		: 1800.001
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq monitor ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase avx2 invpcid rdseed clflushopt md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+MemTotal:        4025932 kB
+MemFree:         2168884 kB
+MemAvailable:    2860076 kB
+Buffers:           42816 kB
+Cached:           846580 kB
+SwapCached:            0 kB
+Active:           463464 kB
+Inactive:        1224444 kB
+Active(anon):       1404 kB
+Inactive(anon):   819440 kB
+Active(file):     462060 kB
+Inactive(file):   405004 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        998396 kB
+SwapFree:         998396 kB
+Dirty:               144 kB
+Writeback:             0 kB
+AnonPages:        791068 kB
+Mapped:           289700 kB
+Shmem:             22332 kB
+KReclaimable:      54108 kB
+Slab:              91980 kB
+SReclaimable:      54108 kB
+SUnreclaim:        37872 kB
+KernelStack:        6272 kB
+PageTables:        13920 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     3011360 kB
+Committed_AS:    3578308 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       36212 kB
+VmallocChunk:          0 kB
+Percpu:              864 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    448512 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      137152 kB
+DirectMap2M:     4057088 kB
+
+------------------------------------Uptime------------------------------------
+ 00:04:21 up 34 min,  1 user,  load average: 0.08, 0.15, 0.17
+
+------------------------------------Service Information------------------------------------
+ [ - ]  alsa-utils
+ [ - ]  anacron
+ [ + ]  apparmor
+ [ + ]  avahi-daemon
+ [ - ]  bluetooth
+ [ - ]  console-setup.sh
+ [ + ]  cron
+ [ + ]  dbus
+ [ + ]  gdm3
+ [ - ]  hwclock.sh
+ [ - ]  keyboard-setup.sh
+ [ + ]  kmod
+ [ + ]  networking
+ [ - ]  plymouth
+ [ + ]  plymouth-log
+ [ + ]  procps
+ [ - ]  pulseaudio-enable-autospawn
+ [ + ]  rsyslog
+ [ - ]  saned
+ [ - ]  speech-dispatcher
+ [ - ]  sudo
+ [ + ]  udev
+ [ + ]  unattended-upgrades
+ [ - ]  x11-common
+
+------------------------------------Nic Information------------------------------------
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::a00:27ff:fe7b:5715  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:7b:57:15  txqueuelen 1000  (Ethernet)
+        RX packets 79254  bytes 117295071 (111.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 20593  bytes 1322832 (1.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 62  bytes 5647 (5.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 62  bytes 5647 (5.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+------------------------------------Route Information------------------------------------
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         10.0.2.2        0.0.0.0         UG        0 0          0 enp0s3
+10.0.2.0        0.0.0.0         255.255.255.0   U         0 0          0 enp0s3
+169.254.0.0     0.0.0.0         255.255.0.0     U         0 0          0 enp0s3
+
+------------------------------------Arp Information------------------------------------
+_gateway (10.0.2.2) at 52:54:00:12:35:02 [ether] on enp0s3
+
+------------------------------------Information of processes------------------------------------
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.4  0.2  98472 10360 ?        -    00:36   0:01 /sbin/init
+root           -  0.4    -      -     - -        Ss   00:36   0:01 -
+root           2  0.0  0.0      0     0 ?        -    00:36   0:00 [kthreadd]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root           3  0.0  0.0      0     0 ?        -    00:36   0:00 [rcu_gp]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root           4  0.0  0.0      0     0 ?        -    00:36   0:00 [rcu_par_gp]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root           5  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/0:0-ata_sff]
+root           -  0.0    -      -     - -        I    00:36   0:00 -
+root           6  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/0:0H-events_highpri]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root           7  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/0:1-events]
+root           -  0.0    -      -     - -        I    00:36   0:00 -
+root           8  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/u2:0-flush-8:0]
+root           -  0.0    -      -     - -        I    00:36   0:00 -
+root           9  0.0  0.0      0     0 ?        -    00:36   0:00 [mm_percpu_wq]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          10  0.0  0.0      0     0 ?        -    00:36   0:00 [rcu_tasks_rude_]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          11  0.0  0.0      0     0 ?        -    00:36   0:00 [rcu_tasks_trace]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          12  0.0  0.0      0     0 ?        -    00:36   0:00 [ksoftirqd/0]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          13  0.0  0.0      0     0 ?        -    00:36   0:00 [rcu_sched]
+root           -  0.0    -      -     - -        I    00:36   0:00 -
+root          14  0.0  0.0      0     0 ?        -    00:36   0:00 [migration/0]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          15  0.0  0.0      0     0 ?        -    00:36   0:00 [cpuhp/0]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          17  0.0  0.0      0     0 ?        -    00:36   0:00 [kdevtmpfs]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          18  0.0  0.0      0     0 ?        -    00:36   0:00 [netns]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          19  0.0  0.0      0     0 ?        -    00:36   0:00 [kauditd]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          20  0.0  0.0      0     0 ?        -    00:36   0:00 [khungtaskd]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          21  0.0  0.0      0     0 ?        -    00:36   0:00 [oom_reaper]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          22  0.0  0.0      0     0 ?        -    00:36   0:00 [writeback]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          23  0.0  0.0      0     0 ?        -    00:36   0:00 [kcompactd0]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          24  0.0  0.0      0     0 ?        -    00:36   0:00 [ksmd]
+root           -  0.0    -      -     - -        SN   00:36   0:00 -
+root          25  0.0  0.0      0     0 ?        -    00:36   0:00 [khugepaged]
+root           -  0.0    -      -     - -        SN   00:36   0:00 -
+root          43  0.0  0.0      0     0 ?        -    00:36   0:00 [kintegrityd]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          44  0.0  0.0      0     0 ?        -    00:36   0:00 [kblockd]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          45  0.0  0.0      0     0 ?        -    00:36   0:00 [blkcg_punt_bio]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          46  0.0  0.0      0     0 ?        -    00:36   0:00 [edac-poller]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          47  0.0  0.0      0     0 ?        -    00:36   0:00 [devfreq_wq]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          48  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/0:1H-kblockd]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          49  0.0  0.0      0     0 ?        -    00:36   0:00 [kswapd0]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root          50  0.0  0.0      0     0 ?        -    00:36   0:00 [kthrotld]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          51  0.0  0.0      0     0 ?        -    00:36   0:00 [acpi_thermal_pm]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          52  0.0  0.0      0     0 ?        -    00:36   0:00 [ipv6_addrconf]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          53  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/u2:1-flush-8:0]
+root           -  0.0    -      -     - -        I    00:36   0:00 -
+root          62  0.0  0.0      0     0 ?        -    00:36   0:00 [kstrp]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          65  0.0  0.0      0     0 ?        -    00:36   0:00 [zswap-shrink]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root          66  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/u3:0]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root         111  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/0:2-events]
+root           -  0.0    -      -     - -        I    00:36   0:00 -
+root         112  0.0  0.0      0     0 ?        -    00:36   0:00 [ata_sff]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root         113  0.0  0.0      0     0 ?        -    00:36   0:00 [scsi_eh_0]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         114  0.0  0.0      0     0 ?        -    00:36   0:00 [scsi_tmf_0]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root         115  0.0  0.0      0     0 ?        -    00:36   0:00 [scsi_eh_1]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         116  0.0  0.0      0     0 ?        -    00:36   0:00 [scsi_eh_2]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         117  0.0  0.0      0     0 ?        -    00:36   0:00 [scsi_tmf_1]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root         118  0.0  0.0      0     0 ?        -    00:36   0:00 [scsi_tmf_2]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root         119  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/u2:2-events_unbound]
+root           -  0.0    -      -     - -        I    00:36   0:00 -
+root         121  0.0  0.0      0     0 ?        -    00:36   0:00 [kworker/0:3-events]
+root           -  0.0    -      -     - -        I    00:36   0:00 -
+root         123  0.0  0.0      0     0 ?        -    00:36   0:00 [irq/18-vmwgfx]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         124  0.0  0.0      0     0 ?        -    00:36   0:00 [ttm_swap]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root         125  0.0  0.0      0     0 ?        -    00:36   0:00 [card0-crtc0]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         126  0.0  0.0      0     0 ?        -    00:36   0:00 [card0-crtc1]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         127  0.0  0.0      0     0 ?        -    00:36   0:00 [card0-crtc2]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         128  0.0  0.0      0     0 ?        -    00:36   0:00 [card0-crtc3]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         129  0.0  0.0      0     0 ?        -    00:36   0:00 [card0-crtc4]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         130  0.0  0.0      0     0 ?        -    00:36   0:00 [card0-crtc5]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         131  0.0  0.0      0     0 ?        -    00:36   0:00 [card0-crtc6]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         132  0.0  0.0      0     0 ?        -    00:36   0:00 [card0-crtc7]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         171  0.0  0.0      0     0 ?        -    00:36   0:00 [jbd2/sda1-8]
+root           -  0.0    -      -     - -        S    00:36   0:00 -
+root         172  0.0  0.0      0     0 ?        -    00:36   0:00 [ext4-rsv-conver]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+root         209  0.1  0.4  48760 19684 ?        -    00:36   0:00 /lib/systemd/systemd-journald
+root           -  0.1    -      -     - -        Ss   00:36   0:00 -
+root         237  0.1  0.1  23940  7060 ?        -    00:36   0:00 /lib/systemd/systemd-udevd
+root           -  0.1    -      -     - -        Ss   00:36   0:00 -
+root         300  0.0  0.0      0     0 ?        -    00:36   0:00 [cryptd]
+root           -  0.0    -      -     - -        I<   00:36   0:00 -
+systemd+     377  0.0  0.1  88508  6224 ?        -    00:36   0:00 /lib/systemd/systemd-timesyncd
+systemd+       -  0.0    -      -     - -        Ssl  00:36   0:00 -
+systemd+       -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         392  0.0  0.2 236792  9548 ?        -    00:36   0:00 /usr/libexec/accounts-daemon
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+avahi        394  0.0  0.0   7272  3504 ?        -    00:36   0:00 avahi-daemon: running [debian.local]
+avahi          -  0.0    -      -     - -        Ss   00:36   0:00 -
+root         395  0.0  0.0   6896  2776 ?        -    00:36   0:00 /usr/sbin/cron -f
+root           -  0.0    -      -     - -        Ss   00:36   0:00 -
+message+     396  0.3  0.1   9760  5852 ?        -    00:36   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+message+       -  0.3    -      -     - -        Ss   00:36   0:01 -
+root         397  0.0  0.4 255236 18940 ?        -    00:36   0:00 /usr/sbin/NetworkManager --no-daemon
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         399  0.4  0.2 235884  9920 ?        -    00:36   0:01 /usr/libexec/polkitd --no-debug
+root           -  0.3    -      -     - -        Ssl  00:36   0:01 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         400  0.0  0.0 220740  3952 ?        -    00:36   0:00 /usr/sbin/rsyslogd -n -iNONE
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         401  0.0  0.1 233112  5656 ?        -    00:36   0:00 /usr/libexec/switcheroo-control
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         402  0.0  0.1  22128  7424 ?        -    00:36   0:00 /lib/systemd/systemd-logind
+root           -  0.0    -      -     - -        Ss   00:36   0:00 -
+root         403  0.0  0.3 393708 12232 ?        -    00:36   0:00 /usr/libexec/udisks2/udisksd
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         404  0.0  0.1  14560  5144 ?        -    00:36   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root           -  0.0    -      -     - -        Ss   00:36   0:00 -
+avahi        410  0.0  0.0   7092   348 ?        -    00:36   0:00 avahi-daemon: chroot helper
+avahi          -  0.0    -      -     - -        S    00:36   0:00 -
+root         427  0.0  0.3 241056 12672 ?        -    00:36   0:00 /usr/sbin/ModemManager
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         431  0.0  0.5 118936 23504 ?        -    00:36   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         447  0.0  0.2 240004  8536 ?        -    00:36   0:00 /usr/sbin/gdm3
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+rtkit        509  0.0  0.0 153692  3036 ?        -    00:36   0:00 /usr/libexec/rtkit-daemon
+rtkit          -  0.0    -      -     - -        SNsl 00:36   0:00 -
+rtkit          -  0.0    -      -     - -        Ssl  00:36   0:00 -
+rtkit          -  0.0    -      -     - -        SNsl 00:36   0:00 -
+root         599  0.0  0.2 247420  8532 ?        -    00:36   0:00 /usr/libexec/upowerd
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root         663  1.6  1.8 472280 76212 ?        -    00:36   0:04 /usr/libexec/packagekitd
+root           -  0.0    -      -     - -        Ssl  00:36   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:37   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:37   0:00 -
+root           -  0.1    -      -     - -        Ssl  00:38   0:00 -
+colord       793  0.0  0.3 243212 13396 ?        -    00:37   0:00 /usr/libexec/colord
+colord         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+colord         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+colord         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+root         854  0.0  0.2 166964  9992 ?        -    00:37   0:00 gdm-session-worker [pam/gdm-password]
+root           -  0.0    -      -     - -        Sl   00:37   0:00 -
+root           -  0.0    -      -     - -        Sl   00:37   0:00 -
+root           -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian       859  0.0  0.2  15816  9492 ?        -    00:37   0:00 /lib/systemd/systemd --user LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NOTIFY_SOCKET=/run/systemd/notify HOME=/home/debian LOGNAME=debian USER=debian SHELL=/bin/bash INVOCATION_ID=f35907a3f96d442f94e180252bf9dcc6 JOURNAL_STREAM=8:15214 XDG_RUNTIME_DIR=/run/user/1000
+debian         -  0.0    -      -     - -        Ss   00:37   0:00 -
+debian       860  0.0  0.0 101476  2808 ?        -    00:37   0:00 (sd-pam)
+debian         -  0.0    -      -     - -        S    00:37   0:00 -
+debian       879  0.0  0.1  90592  5572 ?        -    00:37   0:00 /usr/bin/pipewire HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 LISTEN_PID=879 LISTEN_FDS=1 LISTEN_FDNAMES=pipewire.socket INVOCATION_ID=3518b2636c41491e8b7263c39b377c4a JOURNAL_STREAM=8:15586
+debian         -  0.0    -      -     - -        S<sl 00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian       880  0.0  0.6 1156516 27108 ?       -    00:37   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=859 LISTEN_PID=880 LISTEN_FDS=1 LISTEN_FDNAMES=pulseaudio.socket INVOCATION_ID=45ab87308ad44c6aa936cb2124b18401 JOURNAL_STREAM=8:15585
+debian         -  0.0    -      -     - -        S<sl 00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian       882  0.0  0.6 509936 27564 ?        -    00:37   0:00 /usr/libexec/tracker-miner-fs HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=04e3ae044ea5435b9b08b0b28ff4d8d1 JOURNAL_STREAM=8:15594
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian       887  0.1  0.1   9148  5688 ?        -    00:37   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 LISTEN_PID=887 LISTEN_FDS=1 LISTEN_FDNAMES=dbus.socket INVOCATION_ID=fe34b2dcb5fb430082964afab16c4de4 JOURNAL_STREAM=8:15703
+debian         -  0.1    -      -     - -        Ss   00:37   0:00 -
+debian       888  0.0  0.1  85300  6392 ?        -    00:37   0:00 /usr/bin/pipewire-media-session HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 LISTEN_PID=879 LISTEN_FDS=1 LISTEN_FDNAMES=pipewire.socket INVOCATION_ID=3518b2636c41491e8b7263c39b377c4a JOURNAL_STREAM=8:15586 PIPEWIRE_INTERNAL=1
+debian         -  0.0    -      -     - -        S<l  00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian       905  0.0  0.1 237876  7460 ?        -    00:37   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian       910  0.0  0.2 311024  9796 ?        -    00:37   0:00 /usr/libexec/gvfsd HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=259aff207a9a4db4a68e094948230967 JOURNAL_STREAM=8:15877
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian       915  0.0  0.2 379924  8136 ?        -    00:37   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=259aff207a9a4db4a68e094948230967 JOURNAL_STREAM=8:15877
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian       924  0.0  0.1 159208  5772 tty2     -    00:37   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session XDG_SEAT=seat0 LOGNAME=debian USER=debian USERNAME=debian HOME=/home/debian PWD=/home/debian SHELL=/bin/bash PATH=/usr/local/bin:/usr/bin:/bin:/usr/games XDG_SESSION_TYPE=wayland XDG_VTNR=2 LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh XDG_SESSION_ID=2 XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus XDG_SESSION_CLASS=user XDG_CURRENT_DESKTOP=GNOME GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 DESKTOP_SESSION=gnome XDG_SESSION_DESKTOP=gnome
+debian         -  0.0    -      -     - -        Ssl+ 00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl+ 00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl+ 00:37   0:00 -
+debian       927  0.0  0.4 298500 16168 tty2     -    00:37   0:00 /usr/libexec/gnome-session-binary --systemd LANGUAGE=zh_CN:zh USER=debian XDG_SEAT=seat0 XDG_SESSION_TYPE=wayland SHLVL=0 HOME=/home/debian DESKTOP_SESSION=gnome GTK_MODULES=gail:atk-bridge DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus IM_CONFIG_PHASE=1 LOGNAME=debian _=/usr/bin/gnome-session XDG_SESSION_CLASS=user USERNAME=debian XDG_SESSION_ID=2 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDM_LANG=zh_CN.UTF-8 XDG_RUNTIME_DIR=/run/user/1000 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME XDG_SESSION_DESKTOP=gnome SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=gnome XDG_VTNR=2 PWD=/home/debian
+debian         -  0.0    -      -     - -        Sl+  00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl+  00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl+  00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl+  00:37   0:00 -
+debian       935  0.0  0.2 349624 12060 ?        -    00:37   0:00 /usr/libexec/gvfs-udisks2-volume-monitor HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=46d80cc73ce449358a63be4c8e13820a JOURNAL_STREAM=8:16188
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian       941  0.0  0.1 235476  7064 ?        -    00:37   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=86b8a7d9ef0c40bda41231d67f253e8a JOURNAL_STREAM=8:16202
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian       945  0.0  0.1 233460  6052 ?        -    00:37   0:00 /usr/libexec/gvfs-goa-volume-monitor HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=8c452fe9af0f40fb808e5b7fb15398d8 JOURNAL_STREAM=8:16209
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian       949  0.0  1.0 550812 40336 ?        -    00:37   0:00 /usr/libexec/goa-daemon SHELL=/bin/bash DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 XDG_RUNTIME_DIR=/run/user/1000 QT_ACCESSIBILITY=1 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin GTK_MODULES=gail:atk-bridge JOURNAL_STREAM=8:15703 LANGUAGE=zh_CN:zh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 INVOCATION_ID=fe34b2dcb5fb430082964afab16c4de4 USER=debian DBUS_STARTER_BUS_TYPE=session LANG=zh_CN.UTF-8 MANAGERPID=859 HOME=/home/debian LOGNAME=debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian       956  0.0  0.2 312420  8908 ?        -    00:37   0:00 /usr/libexec/goa-identity-service SHELL=/bin/bash DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 XDG_RUNTIME_DIR=/run/user/1000 QT_ACCESSIBILITY=1 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin GTK_MODULES=gail:atk-bridge JOURNAL_STREAM=8:15703 LANGUAGE=zh_CN:zh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 INVOCATION_ID=fe34b2dcb5fb430082964afab16c4de4 USER=debian DBUS_STARTER_BUS_TYPE=session LANG=zh_CN.UTF-8 MANAGERPID=859 HOME=/home/debian LOGNAME=debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian       962  0.0  0.1 233240  6252 ?        -    00:37   0:00 /usr/libexec/gvfs-mtp-volume-monitor HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=4351dd461a884625903f54fafe84f13d JOURNAL_STREAM=8:16241
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian       966  0.0  0.1 311952  7808 ?        -    00:37   0:00 /usr/libexec/gvfs-afc-volume-monitor HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=dcefc47476b64556b767240a17ab197b JOURNAL_STREAM=8:16248
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1002  0.0  0.1  88388  4400 ?        -    00:37   0:00 /usr/libexec/gnome-session-ctl --monitor HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 IM_CONFIG_PHASE=1 PWD=/home/debian SHLVL=0 USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland _=/usr/bin/gnome-session NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=859 INVOCATION_ID=dbd2cb6e0e904d4ea94805bd59a2dd4a JOURNAL_STREAM=8:16364
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1003  0.0  0.0   5964  3328 ?        -    00:37   0:00 ssh-agent -D -a /run/user/1000/openssh_agent
+debian         -  0.0    -      -     - -        Ss   00:37   0:00 -
+debian      1005  0.0  0.4 594096 19560 ?        -    00:37   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=gnome HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 IM_CONFIG_PHASE=1 PWD=/home/debian SHLVL=0 USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland _=/usr/bin/gnome-session NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=859 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 JOURNAL_STREAM=8:16372
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:42   0:00 -
+debian      1025 11.0 10.9 3980912 440844 ?      -    00:37   0:32 /usr/bin/gnome-shell HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=859 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 JOURNAL_STREAM=8:16603
+debian         - 10.7    -      -     - -        Rsl  00:37   0:31 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.1    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian      1026  0.0  0.1 307292  6420 ?        -    00:37   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately LANGUAGE=zh_CN:zh USER=debian XDG_SESSION_TYPE=wayland SHLVL=0 HOME=/home/debian DESKTOP_SESSION=gnome GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/at-spi-dbus-bus.desktop GTK_MODULES=gail:atk-bridge MANAGERPID=859 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1026 IM_CONFIG_PHASE=1 LOGNAME=debian _=/usr/bin/gnome-session JOURNAL_STREAM=8:16372 DESKTOP_AUTOSTART_ID=1013039e5ad5895d4d16530646364109000000010050043 XDG_SESSION_CLASS=user USERNAME=debian GNOME_DESKTOP_SESSION_ID=this-is-deprecated PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDM_LANG=zh_CN.UTF-8 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME XDG_SESSION_DESKTOP=gnome XMODIFIERS=@im=ibus SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=gnome QT_IM_MODULE=ibus PWD=/home/debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1033  0.0  0.1   8040  4384 ?        -    00:37   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 LANGUAGE=zh_CN:zh USER=debian XDG_SESSION_TYPE=wayland SHLVL=0 HOME=/home/debian DESKTOP_SESSION=gnome GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/at-spi-dbus-bus.desktop GTK_MODULES=gail:atk-bridge MANAGERPID=859 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1026 IM_CONFIG_PHASE=1 LOGNAME=debian _=/usr/bin/gnome-session JOURNAL_STREAM=8:16372 DESKTOP_AUTOSTART_ID=1013039e5ad5895d4d16530646364109000000010050043 XDG_SESSION_CLASS=user USERNAME=debian GNOME_DESKTOP_SESSION_ID=this-is-deprecated PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDM_LANG=zh_CN.UTF-8 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME XDG_SESSION_DESKTOP=gnome XMODIFIERS=@im=ibus SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=gnome QT_IM_MODULE=ibus PWD=/home/debian
+debian         -  0.0    -      -     - -        S    00:37   0:00 -
+debian      1045  0.0  1.4 469736 57324 ?        -    00:37   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.1W9JM1 -listen 4 -listen 5 -displayfd 6 -listen 7 HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=859 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 JOURNAL_STREAM=8:16603 GNOME_SETUP_DISPLAY=:1 DISPLAY=:0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 WAYLAND_DISPLAY=wayland-0 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG WAYLAND_SOCKET=3
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:37   0:00 -
+debian      1075  0.0  0.5 581032 22228 ?        -    00:37   0:00 /usr/libexec/gnome-shell-calendar-server SHELL=/bin/bash GNOME_SETUP_DISPLAY=:1 SSH_AGENT_LAUNCHER=openssh DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 DISPLAY=:0 XDG_CURRENT_DESKTOP=GNOME XDG_RUNTIME_DIR=/run/user/1000 QT_ACCESSIBILITY=1 DESKTOP_SESSION=gnome SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XMODIFIERS=@im=ibus PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GNOME_DESKTOP_SESSION_ID=this-is-deprecated GDMSESSION=gnome USERNAME=debian GTK_MODULES=gail:atk-bridge XDG_SESSION_TYPE=wayland JOURNAL_STREAM=8:16372 LANGUAGE=zh_CN:zh IM_CONFIG_PHASE=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 QT_IM_MODULE=ibus XDG_SESSION_CLASS=user USER=debian DBUS_STARTER_BUS_TYPE=session WAYLAND_DISPLAY=wayland-0 PWD=/home/debian GDM_LANG=zh_CN.UTF-8 SHLVL=0 XDG_MENU_PREFIX=gnome- LANG=zh_CN.UTF-8 MANAGERPID=859 XDG_SESSION_DESKTOP=gnome _=/usr/bin/gnome-session HOME=/home/debian LOGNAME=debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1076  0.0  0.1 233276  4824 ?        -    00:37   0:00 /usr/libexec/xdg-permission-store HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=94374cced312478da4c9ce2fd0930d25 JOURNAL_STREAM=8:17246
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1082  0.0  0.1 155880  5364 ?        -    00:37   0:00 /usr/libexec/dconf-service SHELL=/bin/bash GNOME_SETUP_DISPLAY=:1 SSH_AGENT_LAUNCHER=openssh DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 DISPLAY=:0 XDG_CURRENT_DESKTOP=GNOME XDG_RUNTIME_DIR=/run/user/1000 QT_ACCESSIBILITY=1 DESKTOP_SESSION=gnome SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XMODIFIERS=@im=ibus PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GNOME_DESKTOP_SESSION_ID=this-is-deprecated GDMSESSION=gnome USERNAME=debian GTK_MODULES=gail:atk-bridge XDG_SESSION_TYPE=wayland JOURNAL_STREAM=8:16372 LANGUAGE=zh_CN:zh IM_CONFIG_PHASE=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 QT_IM_MODULE=ibus XDG_SESSION_CLASS=user USER=debian DBUS_STARTER_BUS_TYPE=session WAYLAND_DISPLAY=wayland-0 PWD=/home/debian GDM_LANG=zh_CN.UTF-8 SHLVL=0 XDG_MENU_PREFIX=gnome- LANG=zh_CN.UTF-8 MANAGERPID=859 XDG_SESSION_DESKTOP=gnome _=/usr/bin/gnome-session HOME=/home/debian LOGNAME=debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1090  0.0  0.6 467180 26144 ?        -    00:37   0:00 /usr/libexec/evolution-source-registry HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=7a8590c0895641308cbe54474462acb0 JOURNAL_STREAM=8:17352
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1096  0.0  0.1 165668  6952 ?        -    00:37   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session SHELL=/bin/bash DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-0lqYl65Zm8,guid=ea881a8a40bf490417dc955b6287c3bc QT_ACCESSIBILITY=1 XDG_CURRENT_DESKTOP=GNOME XDG_RUNTIME_DIR=/run/user/1000 DESKTOP_SESSION=gnome SSH_AUTH_SOCK=/run/user/1000/keyring/ssh XMODIFIERS=@im=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDMSESSION=gnome GNOME_DESKTOP_SESSION_ID=this-is-deprecated USERNAME=debian GTK_MODULES=gail:atk-bridge GIO_LAUNCHED_DESKTOP_FILE_PID=1026 XDG_SESSION_TYPE=wayland JOURNAL_STREAM=8:16372 LANGUAGE=zh_CN:zh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus IM_CONFIG_PHASE=1 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 DESKTOP_AUTOSTART_ID=1013039e5ad5895d4d16530646364109000000010050043 GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/at-spi-dbus-bus.desktop QT_IM_MODULE=ibus XDG_SESSION_CLASS=user USER=debian DBUS_STARTER_BUS_TYPE=accessibility PWD=/home/debian GDM_LANG=zh_CN.UTF-8 SHLVL=0 LANG=zh_CN.UTF-8 XDG_MENU_PREFIX=gnome- MANAGERPID=859 XDG_SESSION_DESKTOP=gnome _=/usr/bin/gnome-session LOGNAME=debian HOME=/home/debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1097  0.0  0.6 2600836 27668 ?       -    00:37   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications SHELL=/bin/bash GNOME_SETUP_DISPLAY=:1 SSH_AGENT_LAUNCHER=openssh DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 DISPLAY=:0 XDG_CURRENT_DESKTOP=GNOME XDG_RUNTIME_DIR=/run/user/1000 QT_ACCESSIBILITY=1 DESKTOP_SESSION=gnome SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XMODIFIERS=@im=ibus PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GNOME_DESKTOP_SESSION_ID=this-is-deprecated GDMSESSION=gnome USERNAME=debian GTK_MODULES=gail:atk-bridge XDG_SESSION_TYPE=wayland JOURNAL_STREAM=8:16372 LANGUAGE=zh_CN:zh IM_CONFIG_PHASE=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 QT_IM_MODULE=ibus XDG_SESSION_CLASS=user USER=debian DBUS_STARTER_BUS_TYPE=session WAYLAND_DISPLAY=wayland-0 PWD=/home/debian GDM_LANG=zh_CN.UTF-8 SHLVL=0 XDG_MENU_PREFIX=gnome- LANG=zh_CN.UTF-8 MANAGERPID=859 XDG_SESSION_DESKTOP=gnome _=/usr/bin/gnome-session HOME=/home/debian LOGNAME=debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1110  0.0  0.2 307400  8656 ?        -    00:37   0:00 /usr/libexec/gsd-a11y-settings HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=c728ff74d68549dc8d4914b55415ee15 JOURNAL_STREAM=8:17430
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1111  0.0  0.6 451584 25540 ?        -    00:37   0:00 /usr/libexec/gsd-color HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=c394b648f53f453e88dd0c274c64db96 JOURNAL_STREAM=8:17428
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:42   0:00 -
+debian      1112  0.0  0.4 376680 18356 ?        -    00:37   0:00 /usr/libexec/gsd-datetime HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=51615c0c6961481cb6bbe5f3b9784f61 JOURNAL_STREAM=8:17437
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1113  0.0  0.1 309408  7420 ?        -    00:37   0:00 /usr/libexec/gsd-housekeeping HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=8de9e510b6e143059c49cb1c4b3a891c JOURNAL_STREAM=8:17441
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1114  0.0  0.5 342948 22636 ?        -    00:37   0:00 /usr/libexec/gsd-keyboard HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=19589ba3b5e345a28d66d2e137b4ad36 JOURNAL_STREAM=8:17447
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1115  0.0  0.6 932112 28060 ?        -    00:37   0:00 /usr/libexec/gsd-media-keys HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=0ed173b0cfa74ed58281fc54b178879b JOURNAL_STREAM=8:17455
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1118  0.0  0.6 377396 25652 ?        -    00:37   0:00 /usr/libexec/gsd-power HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=7027b823dc454caeb1442bc50cc01b60 JOURNAL_STREAM=8:17459
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1123  0.0  0.2 320732 10780 ?        -    00:37   0:00 /usr/libexec/gsd-print-notifications HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=07a7d3dbbf2d4cd7a53b9dee1c7ecb34 JOURNAL_STREAM=8:17501
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1124  0.0  0.1 454680  6052 ?        -    00:37   0:00 /usr/libexec/gsd-rfkill HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=12721d4c83f04e578000792d9cf778cc JOURNAL_STREAM=8:17506
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1130  0.0  0.1 233112  5848 ?        -    00:37   0:00 /usr/libexec/gsd-screensaver-proxy HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=41c103088d92403d987a4873bad20960 JOURNAL_STREAM=8:17541
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1134  0.0  0.2 462880  9816 ?        -    00:37   0:00 /usr/libexec/gsd-sharing HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=2f9b75dcd8ce4bd9820ddcbe5aff5677 JOURNAL_STREAM=8:17548
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1139  0.0  0.2 460536 10204 ?        -    00:37   0:00 /usr/libexec/gsd-smartcard HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=817ffea05b44462ea51a7dc6b7f9f890 JOURNAL_STREAM=8:17581
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1141  0.0  0.1 231792  7508 ?        -    00:37   0:00 /usr/libexec/gsd-disk-utility-notify LANGUAGE=zh_CN:zh USER=debian XDG_SESSION_TYPE=wayland SHLVL=0 HOME=/home/debian DESKTOP_SESSION=gnome GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/org.gnome.SettingsDaemon.DiskUtilityNotify.desktop GTK_MODULES=gail:atk-bridge MANAGERPID=859 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1141 IM_CONFIG_PHASE=1 WAYLAND_DISPLAY=wayland-0 LOGNAME=debian _=/usr/bin/gnome-session JOURNAL_STREAM=8:16372 DESKTOP_AUTOSTART_ID=1013039e5ad5895d4d16530646363693600000010050027 XDG_SESSION_CLASS=user USERNAME=debian GNOME_DESKTOP_SESSION_ID=this-is-deprecated PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDM_LANG=zh_CN.UTF-8 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- GNOME_SETUP_DISPLAY=:1 DISPLAY=:0 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME XDG_SESSION_DESKTOP=gnome XMODIFIERS=@im=ibus XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=gnome QT_IM_MODULE=ibus PWD=/home/debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1142  0.0  0.3 320044 12232 ?        -    00:37   0:00 /usr/libexec/gsd-sound HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=6973f7cb9dec403381a1331164070400 JOURNAL_STREAM=8:17611
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1144  0.1  2.0 706172 82604 ?        -    00:37   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify LANGUAGE=zh_CN:zh USER=debian XDG_SESSION_TYPE=wayland SHLVL=0 HOME=/home/debian DESKTOP_SESSION=gnome GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop GTK_MODULES=gail:atk-bridge MANAGERPID=859 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1144 IM_CONFIG_PHASE=1 WAYLAND_DISPLAY=wayland-0 LOGNAME=debian _=/usr/bin/gnome-session JOURNAL_STREAM=8:16372 DESKTOP_AUTOSTART_ID=1013039e5ad5895d4d16530646364092400000010050042 XDG_SESSION_CLASS=user USERNAME=debian GNOME_DESKTOP_SESSION_ID=this-is-deprecated PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDM_LANG=zh_CN.UTF-8 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- GNOME_SETUP_DISPLAY=:1 DISPLAY=:0 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME XDG_SESSION_DESKTOP=gnome XMODIFIERS=@im=ibus XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=gnome QT_IM_MODULE=ibus PWD=/home/debian
+debian         -  0.1    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1147  0.0  0.1 456384  7080 ?        -    00:37   0:00 /usr/libexec/gsd-usb-protection HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=24048215addb422d9498c5995d6402ba JOURNAL_STREAM=8:17648
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1148  0.0  0.5 416980 22796 ?        -    00:37   0:00 /usr/libexec/gsd-wacom HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=4e03d1069bb44f18a5e0e36da33fd73b JOURNAL_STREAM=8:17650
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1154  1.0  2.3 809472 92756 ?        -    00:37   0:02 /usr/bin/gnome-software --gapplication-service LANGUAGE=zh_CN:zh USER=debian XDG_SESSION_TYPE=wayland SHLVL=0 HOME=/home/debian DESKTOP_SESSION=gnome GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/gnome-software-service.desktop GTK_MODULES=gail:atk-bridge MANAGERPID=859 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1154 IM_CONFIG_PHASE=1 WAYLAND_DISPLAY=wayland-0 LOGNAME=debian _=/usr/bin/gnome-session JOURNAL_STREAM=8:16372 DESKTOP_AUTOSTART_ID=1013039e5ad5895d4d16530646364214000000010050048 XDG_SESSION_CLASS=user USERNAME=debian GNOME_DESKTOP_SESSION_ID=this-is-deprecated PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDM_LANG=zh_CN.UTF-8 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- GNOME_SETUP_DISPLAY=:1 DISPLAY=:0 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME XDG_SESSION_DESKTOP=gnome XMODIFIERS=@im=ibus XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=gnome QT_IM_MODULE=ibus PWD=/home/debian
+debian         -  0.2    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.3    -      -     - -        Sl   00:37   0:01 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian      1187  0.0  0.3 345220 15336 ?        -    00:37   0:00 /usr/libexec/gsd-printer HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=07a7d3dbbf2d4cd7a53b9dee1c7ecb34 JOURNAL_STREAM=8:17501
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1234  0.0  0.7 726960 30948 ?        -    00:37   0:00 /usr/libexec/evolution-calendar-factory HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=f0b6202600074fd5b77cde3a12b78855 JOURNAL_STREAM=8:17842
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1255  0.1  0.8 677256 34980 ?        -    00:37   0:00 /usr/libexec/evolution-addressbook-factory HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=0e0a9795f98a4664a265feeb8b715713 JOURNAL_STREAM=8:17876
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1279  0.3  0.3 311540 12460 ?        -    00:37   0:00 ibus-daemon --panel disable -r --xim HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 JOURNAL_STREAM=8:16603 GNOME_SETUP_DISPLAY=:1 DISPLAY=:1 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 WAYLAND_DISPLAY=wayland-0 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+debian         -  0.1    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.1    -      -     - -        Sl   00:37   0:00 -
+debian      1280  0.0  1.6 781832 64748 ?        -    00:37   0:00 /usr/libexec/gsd-xsettings HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=30dc09f806de4ce6a453e615eddafca6 JOURNAL_STREAM=8:18046
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        SNsl 00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1287  0.0  0.1 160396  7112 ?        -    00:37   0:00 /usr/libexec/ibus-memconf HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 JOURNAL_STREAM=8:16603 GNOME_SETUP_DISPLAY=:1 DISPLAY=:1 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 WAYLAND_DISPLAY=wayland-0 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1288  0.7  0.7 347440 30720 ?        -    00:37   0:02 /usr/libexec/ibus-extension-gtk3 HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 JOURNAL_STREAM=8:16603 GNOME_SETUP_DISPLAY=:1 DISPLAY=:1 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 WAYLAND_DISPLAY=wayland-0 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+debian         -  0.6    -      -     - -        Sl   00:37   0:01 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1291  0.0  1.4 629748 57804 ?        -    00:37   0:00 /usr/libexec/ibus-x11 --kill-daemon HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 JOURNAL_STREAM=8:16603 GNOME_SETUP_DISPLAY=:1 DISPLAY=:1 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 WAYLAND_DISPLAY=wayland-0 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1293  0.0  0.1 234172  7092 ?        -    00:37   0:00 /usr/libexec/ibus-portal SHELL=/bin/bash GNOME_SETUP_DISPLAY=:1 SSH_AGENT_LAUNCHER=openssh DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 DISPLAY=:0 XDG_CURRENT_DESKTOP=GNOME XDG_RUNTIME_DIR=/run/user/1000 QT_ACCESSIBILITY=1 DESKTOP_SESSION=gnome SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XMODIFIERS=@im=ibus PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GNOME_DESKTOP_SESSION_ID=this-is-deprecated GDMSESSION=gnome USERNAME=debian GTK_MODULES=gail:atk-bridge XDG_SESSION_TYPE=wayland JOURNAL_STREAM=8:16372 LANGUAGE=zh_CN:zh IM_CONFIG_PHASE=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 QT_IM_MODULE=ibus XDG_SESSION_CLASS=user USER=debian DBUS_STARTER_BUS_TYPE=session WAYLAND_DISPLAY=wayland-0 PWD=/home/debian GDM_LANG=zh_CN.UTF-8 SHLVL=0 XDG_MENU_PREFIX=gnome- LANG=zh_CN.UTF-8 MANAGERPID=859 XDG_SESSION_DESKTOP=gnome _=/usr/bin/gnome-session HOME=/home/debian LOGNAME=debian
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1343  0.1  0.6 297604 25652 ?        -    00:37   0:00 /usr/libexec/ibus-engine-libpinyin --ibus HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 JOURNAL_STREAM=8:16603 GNOME_SETUP_DISPLAY=:1 DISPLAY=:1 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 WAYLAND_DISPLAY=wayland-0 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+root        1352  0.1  0.7 455736 29156 ?        -    00:37   0:00 /usr/libexec/fwupd/fwupd
+root           -  0.1    -      -     - -        Ssl  00:37   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:37   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:37   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:37   0:00 -
+root           -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1374  0.0  0.1 159864  6212 ?        -    00:37   0:00 /usr/libexec/gvfsd-metadata HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=dd822e727fea4d20a5cf7b437392566c JOURNAL_STREAM=8:18821
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:37   0:00 -
+debian      1772  1.0  4.4 17282292 177940 ?     -    00:37   0:02 /opt/google/chrome/chrome --enable-crashpad able-crashpad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+debian         -  0.6    -      -     - -        SLl  00:37   0:01 -
+debian         -  0.0    -      -     - -        SLl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:37   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian         -  0.0    -      -     - -        SLl  00:38   0:00 -
+debian      1778  0.0  0.0   5652   508 ?        -    00:37   0:00 cat SHELL=/bin/bash SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 QT_ACCESSIBILITY=1 SSH_AGENT_LAUNCHER=openssh XDG_MENU_PREFIX=gnome- GNOME_DESKTOP_SESSION_ID=this-is-deprecated LANGUAGE=zh_CN:zh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh XMODIFIERS=@im=ibus DESKTOP_SESSION=gnome GTK_MODULES=gail:atk-bridge PWD=/home/debian XDG_SESSION_DESKTOP=gnome LOGNAME=debian XDG_SESSION_TYPE=wayland XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 DESKTOP_STARTUP_ID=gnome-shell/Google Chrome/1025-0-debian_TIME103973 GJS_DEBUG_TOPICS=JS ERROR;JS LOG GDM_LANG=zh_CN.UTF-8 HOME=/home/debian USERNAME=debian IM_CONFIG_PHASE=1 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME WAYLAND_DISPLAY=wayland-0 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 MANAGERPID=859 GJS_DEBUG_OUTPUT=stderr GNOME_SETUP_DISPLAY=:1 XDG_SESSION_CLASS=user CHROME_WRAPPER=/opt/google/chrome/google-chrome USER=debian DISPLAY=:0 SHLVL=0 QT_IM_MODULE=ibus GNOME_DISABLE_CRASH_DIALOG=SET_BY_GOOGLE_CHROME LD_LIBRARY_PATH=/opt/google/chrome:/opt/google/chrome/lib XDG_RUNTIME_DIR=/run/user/1000 JOURNAL_STREAM=8:16603 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDMSESSION=gnome DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1772 GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/google-chrome.desktop CHROME_VERSION_EXTRA=stable
+debian         -  0.0    -      -     - -        S    00:37   0:00 -
+debian      1779  0.0  0.0   5652   560 ?        -    00:37   0:00 cat SHELL=/bin/bash SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 QT_ACCESSIBILITY=1 SSH_AGENT_LAUNCHER=openssh XDG_MENU_PREFIX=gnome- GNOME_DESKTOP_SESSION_ID=this-is-deprecated LANGUAGE=zh_CN:zh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh XMODIFIERS=@im=ibus DESKTOP_SESSION=gnome GTK_MODULES=gail:atk-bridge PWD=/home/debian XDG_SESSION_DESKTOP=gnome LOGNAME=debian XDG_SESSION_TYPE=wayland XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 DESKTOP_STARTUP_ID=gnome-shell/Google Chrome/1025-0-debian_TIME103973 GJS_DEBUG_TOPICS=JS ERROR;JS LOG GDM_LANG=zh_CN.UTF-8 HOME=/home/debian USERNAME=debian IM_CONFIG_PHASE=1 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME WAYLAND_DISPLAY=wayland-0 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 MANAGERPID=859 GJS_DEBUG_OUTPUT=stderr GNOME_SETUP_DISPLAY=:1 XDG_SESSION_CLASS=user CHROME_WRAPPER=/opt/google/chrome/google-chrome USER=debian DISPLAY=:0 SHLVL=0 QT_IM_MODULE=ibus GNOME_DISABLE_CRASH_DIALOG=SET_BY_GOOGLE_CHROME LD_LIBRARY_PATH=/opt/google/chrome:/opt/google/chrome/lib XDG_RUNTIME_DIR=/run/user/1000 JOURNAL_STREAM=8:16603 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDMSESSION=gnome DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1772 GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/google-chrome.desktop CHROME_VERSION_EXTRA=stable
+debian         -  0.0    -      -     - -        S    00:37   0:00 -
+debian      1781  0.0  0.0 16798540 2832 ?       -    00:37   0:00 /opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/debian/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Debian GNU/Linux 11 (bullseye) --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=100.0.4896.60 --initial-client-fd=5 --shared-client-connection SHELL=/bin/bash SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 QT_ACCESSIBILITY=1 SSH_AGENT_LAUNCHER=openssh XDG_MENU_PREFIX=gnome- GNOME_DESKTOP_SESSION_ID=this-is-deprecated LANGUAGE=zh_CN:zh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh XMODIFIERS=@im=ibus DESKTOP_SESSION=gnome GTK_MODULES=gail:atk-bridge PWD=/home/debian XDG_SESSION_DESKTOP=gnome LOGNAME=debian XDG_SESSION_TYPE=wayland XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 DESKTOP_STARTUP_ID=gnome-shell/Google Chrome/1025-0-debian_TIME103973 GJS_DEBUG_TOPICS=JS ERROR;JS LOG GDM_LANG=zh_CN.UTF-8 HOME=/home/debian USERNAME=debian IM_CONFIG_PHASE=1 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME WAYLAND_DISPLAY=wayland-0 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 MANAGERPID=859 GJS_DEBUG_OUTPUT=stderr GNOME_SETUP_DISPLAY=:1 XDG_SESSION_CLASS=user CHROME_WRAPPER=/opt/google/chrome/google-chrome USER=debian DISPLAY=:0 SHLVL=0 QT_IM_MODULE=ibus GNOME_DISABLE_CRASH_DIALOG=SET_BY_GOOGLE_CHROME LD_LIBRARY_PATH=/opt/google/chrome:/opt/google/chrome/lib XDG_RUNTIME_DIR=/run/user/1000 JOURNAL_STREAM=8:16603 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDMSESSION=gnome DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1772 GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/google-chrome.desktop CHROME_VERSION_EXTRA=stable
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1783  0.0  0.0 16790328 1288 ?       -    00:37   0:00 /opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/debian/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Debian GNU/Linux 11 (bullseye) --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=100.0.4896.60 --initial-client-fd=4 --shared-client-connection SHELL=/bin/bash SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 QT_ACCESSIBILITY=1 SSH_AGENT_LAUNCHER=openssh XDG_MENU_PREFIX=gnome- GNOME_DESKTOP_SESSION_ID=this-is-deprecated LANGUAGE=zh_CN:zh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh XMODIFIERS=@im=ibus DESKTOP_SESSION=gnome GTK_MODULES=gail:atk-bridge PWD=/home/debian XDG_SESSION_DESKTOP=gnome LOGNAME=debian XDG_SESSION_TYPE=wayland XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 DESKTOP_STARTUP_ID=gnome-shell/Google Chrome/1025-0-debian_TIME103973 GJS_DEBUG_TOPICS=JS ERROR;JS LOG GDM_LANG=zh_CN.UTF-8 HOME=/home/debian USERNAME=debian IM_CONFIG_PHASE=1 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=GNOME WAYLAND_DISPLAY=wayland-0 INVOCATION_ID=f9433e0d0f93480898a8dd60466420d6 MANAGERPID=859 GJS_DEBUG_OUTPUT=stderr GNOME_SETUP_DISPLAY=:1 XDG_SESSION_CLASS=user CHROME_WRAPPER=/opt/google/chrome/google-chrome USER=debian DISPLAY=:0 SHLVL=0 QT_IM_MODULE=ibus GNOME_DISABLE_CRASH_DIALOG=SET_BY_GOOGLE_CHROME LD_LIBRARY_PATH=/opt/google/chrome:/opt/google/chrome/lib XDG_RUNTIME_DIR=/run/user/1000 JOURNAL_STREAM=8:16603 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDMSESSION=gnome DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=1772 GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/google-chrome.desktop CHROME_VERSION_EXTRA=stable
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1786  0.6  2.0 768864 82792 ?        -    00:37   0:01 /usr/bin/nautilus --gapplication-service SHELL=/bin/bash GNOME_SETUP_DISPLAY=:1 SSH_AGENT_LAUNCHER=openssh DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 DISPLAY=:0 XDG_CURRENT_DESKTOP=GNOME XDG_RUNTIME_DIR=/run/user/1000 QT_ACCESSIBILITY=1 DESKTOP_SESSION=gnome SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XMODIFIERS=@im=ibus PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GNOME_DESKTOP_SESSION_ID=this-is-deprecated GDMSESSION=gnome USERNAME=debian GTK_MODULES=gail:atk-bridge XDG_SESSION_TYPE=wayland JOURNAL_STREAM=8:16372 LANGUAGE=zh_CN:zh IM_CONFIG_PHASE=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 QT_IM_MODULE=ibus XDG_SESSION_CLASS=user USER=debian DBUS_STARTER_BUS_TYPE=session WAYLAND_DISPLAY=wayland-0 PWD=/home/debian GDM_LANG=zh_CN.UTF-8 SHLVL=0 XDG_MENU_PREFIX=gnome- LANG=zh_CN.UTF-8 MANAGERPID=859 XDG_SESSION_DESKTOP=gnome _=/usr/bin/gnome-session HOME=/home/debian LOGNAME=debian
+debian         -  0.6    -      -     - -        Sl   00:37   0:01 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:42   0:00 -
+root        1791  0.0  0.0      0     0 ?        -    00:37   0:00 [kworker/0:4-cgroup_destroy]
+root           -  0.0    -      -     - -        I    00:37   0:00 -
+debian      1798  0.0  0.1 311524  7968 ?        -    00:37   0:00 /usr/libexec/gvfsd-trash --spawner :1.6 /org/gtk/gvfs/exec_spaw/0 HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=259aff207a9a4db4a68e094948230967 JOURNAL_STREAM=8:15877
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1806  0.0  1.4 17046044 56812 ?      -    00:37   0:00 /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-crashpad --enable-crashpad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+debian         -  0.0    -      -     - -        S    00:37   0:00 -
+debian      1810  0.0  1.3 17046040 55776 ?      -    00:37   0:00 /opt/google/chrome/chrome --type=zygote --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-crashpad --enable-crashpad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+debian         -  0.0    -      -     - -        S    00:37   0:00 -
+debian      1813  0.0  0.1 16804936 7600 ?       -    00:37   0:00 /opt/google/chrome/nacl_helper SBX_NET_NS=1 SBX_PID_NS=1 SBX_USER_NS=1
+debian         -  0.0    -      -     - -        S    00:37   0:00 -
+debian      1816  0.0  0.3 17046064 15516 ?      -    00:37   0:00 /opt/google/chrome/chrome --type=zygote --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-crashpad --enable-crashpad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+debian         -  0.0    -      -     - -        S    00:37   0:00 -
+debian      1822  0.0  0.1 384768  7404 ?        -    00:37   0:00 /usr/libexec/gvfsd-burn --spawner :1.6 /org/gtk/gvfs/exec_spaw/1 HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=859 INVOCATION_ID=259aff207a9a4db4a68e094948230967 JOURNAL_STREAM=8:15877
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:37   0:00 -
+debian      1846  0.0  0.3 621560 15744 ?        -    00:38   0:00 /usr/libexec/xdg-desktop-portal HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=d856cd1f622b43ce9c0a688010b41d1d JOURNAL_STREAM=8:20691
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian      1855  0.0  0.2 528944  8716 ?        -    00:38   0:00 /usr/libexec/xdg-document-portal HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=b09152377ee5447fb12454603440c215 JOURNAL_STREAM=8:20719
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian      1856  0.0  2.2 17092316 88960 ?      -    00:38   0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=zh-CN --service-sandbox-type=none --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072 --enable-crashpad 477,131072 --enable-crashpad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:40   0:00 -
+root        1866  0.0  0.0   2404  1736 ?        -    00:38   0:00 fusermount -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+root           -  0.0    -      -     - -        Ss   00:38   0:00 -
+debian      1871  0.0  0.7 381664 29708 ?        -    00:38   0:00 /usr/libexec/xdg-desktop-portal-gtk HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=d490de5511fd424a967974b4f585b680 JOURNAL_STREAM=8:20826
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:38   0:00 -
+debian      1891  0.0  1.0 17087444 40712 ?      -    00:38   0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=zh-CN --service-sandbox-type=utility --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072 ad --crashpad-handler-pid=1781 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian      1902  2.9  2.3 665372 95176 ?        -    00:38   0:07 /usr/bin/gedit --gapplication-service SHELL=/bin/bash GNOME_SETUP_DISPLAY=:1 SSH_AGENT_LAUNCHER=openssh DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 DISPLAY=:0 XDG_CURRENT_DESKTOP=GNOME XDG_RUNTIME_DIR=/run/user/1000 QT_ACCESSIBILITY=1 DESKTOP_SESSION=gnome SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 XMODIFIERS=@im=ibus PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GNOME_DESKTOP_SESSION_ID=this-is-deprecated GDMSESSION=gnome USERNAME=debian GTK_MODULES=gail:atk-bridge XDG_SESSION_TYPE=wayland JOURNAL_STREAM=8:16372 LANGUAGE=zh_CN:zh IM_CONFIG_PHASE=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 INVOCATION_ID=c5baca0a2a4e437893b25a81dc450454 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 QT_IM_MODULE=ibus XDG_SESSION_CLASS=user USER=debian DBUS_STARTER_BUS_TYPE=session WAYLAND_DISPLAY=wayland-0 PWD=/home/debian GDM_LANG=zh_CN.UTF-8 SHLVL=0 XDG_MENU_PREFIX=gnome- LANG=zh_CN.UTF-8 MANAGERPID=859 XDG_SESSION_DESKTOP=gnome _=/usr/bin/gnome-session HOME=/home/debian LOGNAME=debian
+debian         -  2.9    -      -     - -        Sl   00:38   0:07 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:42   0:00 -
+debian      1916  0.0  1.8 1162306920 76016 ?    -    00:38   0:00 /opt/google/chrome/chrome --type=renderer --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --display-capture-permissions-policy-allowed --change-stack-guard-on-fork=enable --lang=zh-CN --num-raster-threads=1 --renderer-client-id=7 --launch-time-ticks=123211228 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072 cy-allowed --change-stack-guard-on-fork=enable --lang=zh-CN --num-raster-threads=1 --renderer-client-id=7 --launch-time-ticks=123211228 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:38   0:00 -
+debian      1922  0.2  2.8 1162336816 114672 ?   -    00:38   0:00 /opt/google/chrome/chrome --type=renderer --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --display-capture-permissions-policy-allowed --change-stack-guard-on-fork=enable --lang=zh-CN --num-raster-threads=1 --renderer-client-id=6 --launch-time-ticks=123459562 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072 cy-allowed --change-stack-guard-on-fork=enable --lang=zh-CN --num-raster-threads=1 --renderer-client-id=6 --launch-time-ticks=123459562 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+debian         -  0.1    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:39   0:00 -
+debian      1988  0.0  2.2 1162312116 89364 ?    -    00:38   0:00 /opt/google/chrome/chrome --type=renderer --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --extension-process --display-capture-permissions-policy-allowed --change-stack-guard-on-fork=enable --lang=zh-CN --num-raster-threads=1 --renderer-client-id=5 --launch-time-ticks=124983336 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072 ure-permissions-policy-allowed --change-stack-guard-on-fork=enable --lang=zh-CN --num-raster-threads=1 --renderer-client-id=5 --launch-time-ticks=124983336 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:38   0:00 -
+debian      2043  0.1  2.7 17139652 110472 ?     -    00:38   0:00 /opt/google/chrome/chrome --type=gpu-process --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=WAAAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072 es=WAAAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian      2054  0.0  1.5 1162306920 61512 ?    -    00:38   0:00 /opt/google/chrome/chrome --type=renderer --enable-crashpad --crashpad-handler-pid=1781 --enable-crash-reporter=, --display-capture-permissions-policy-allowed --change-stack-guard-on-fork=enable --disable-gpu-compositing --lang=zh-CN --num-raster-threads=1 --renderer-client-id=13 --launch-time-ticks=129338352 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072 cy-allowed --change-stack-guard-on-fork=enable --disable-gpu-compositing --lang=zh-CN --num-raster-threads=1 --renderer-client-id=13 --launch-time-ticks=129338352 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11291723051743015504,7535053981492095477,131072                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        Sl   00:38   0:00 -
+debian         -  0.0    -      -     - -        SNl  00:38   0:00 -
+debian      2140  2.3  1.7 568564 69260 ?        -    00:40   0:02 /usr/libexec/gnome-terminal-server HOME=/home/debian LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh LOGNAME=debian PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games SHELL=/bin/bash USER=debian XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=gnome DISPLAY=:0 GDMSESSION=gnome GDM_LANG=zh_CN.UTF-8 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 IM_CONFIG_PHASE=1 PWD=/home/debian QT_IM_MODULE=ibus SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 SHLVL=0 SSH_AGENT_LAUNCHER=openssh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=debian WAYLAND_DISPLAY=wayland-0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 XDG_CURRENT_DESKTOP=GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XMODIFIERS=@im=ibus _=/usr/bin/gnome-session MANAGERPID=859 INVOCATION_ID=0b8080e8419d44c0a8936a70b849f8b2 JOURNAL_STREAM=8:25277
+debian         -  2.3    -      -     - -        Ssl  00:40   0:02 -
+debian         -  0.0    -      -     - -        Ssl  00:40   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:40   0:00 -
+debian         -  0.0    -      -     - -        Ssl  00:40   0:00 -
+debian      2145  0.0  0.1   8084  4808 pts/0    -    00:40   0:00 bash SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/0fecca61_c7ec_463c_b225_a2638187265f LANG=zh_CN.UTF-8 LANGUAGE=zh_CN:zh XDG_CURRENT_DESKTOP=GNOME WAYLAND_DISPLAY=wayland-0 IM_CONFIG_PHASE=1 COLORTERM=truecolor QT_IM_MODULE=ibus USER=debian DESKTOP_SESSION=gnome XDG_MENU_PREFIX=gnome- HOME=/home/debian PWD=/home/debian/HOMEWORK 6 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 SSH_AGENT_LAUNCHER=openssh _=/usr/bin/gnome-session GTK_MODULES=gail:atk-bridge VTE_VERSION=6203 XDG_SESSION_DESKTOP=gnome QT_ACCESSIBILITY=1 GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SETUP_DISPLAY=:1 LOGNAME=debian GNOME_TERMINAL_SERVICE=:1.97 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games XDG_RUNTIME_DIR=/run/user/1000 XMODIFIERS=@im=ibus SHELL=/bin/bash XDG_SESSION_TYPE=wayland DBUS_STARTER_BUS_TYPE=session USERNAME=debian GDM_LANG=zh_CN.UTF-8 SHLVL=0 XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 DISPLAY=:0 TERM=xterm-256color GDMSESSION=gnome XDG_SESSION_CLASS=user
+debian         -  0.0    -      -     - -        Ss   00:40   0:00 -
+_apt        2228  0.0  0.2  21996  9856 ?        -    00:41   0:00 /usr/lib/apt/methods/https
+_apt           -  0.0    -      -     - -        S    00:41   0:00 -
+debian      2233  0.0  0.0  10056  3428 pts/0    -    00:42   0:00 ps auxwwem SHELL=/bin/bash SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1005,unix/debian:/tmp/.ICE-unix/1005 QT_ACCESSIBILITY=1 COLORTERM=truecolor SSH_AGENT_LAUNCHER=openssh XDG_MENU_PREFIX=gnome- GNOME_DESKTOP_SESSION_ID=this-is-deprecated LANGUAGE=zh_CN:zh SSH_AUTH_SOCK=/run/user/1000/keyring/ssh XMODIFIERS=@im=ibus DESKTOP_SESSION=gnome GTK_MODULES=gail:atk-bridge DBUS_STARTER_BUS_TYPE=session PWD=/home/debian/HOMEWORK 6 LOGNAME=debian XDG_SESSION_DESKTOP=gnome XDG_SESSION_TYPE=wayland XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.1W9JM1 GDM_LANG=zh_CN.UTF-8 HOME=/home/debian USERNAME=debian IM_CONFIG_PHASE=1 LANG=zh_CN.UTF-8 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36: XDG_CURRENT_DESKTOP=GNOME VTE_VERSION=6203 WAYLAND_DISPLAY=wayland-0 GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/0fecca61_c7ec_463c_b225_a2638187265f GNOME_SETUP_DISPLAY=:1 XDG_SESSION_CLASS=user TERM=xterm-256color USER=debian GNOME_TERMINAL_SERVICE=:1.97 DISPLAY=:0 SHLVL=1 QT_IM_MODULE=ibus DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 XDG_RUNTIME_DIR=/run/user/1000 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games GDMSESSION=gnome DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f9cd5cae55315c15e521ea3c6287c3b7 _=/usr/bin/ps
+debian         -  0.0    -      -     - -        R+   00:42   0:00 -
